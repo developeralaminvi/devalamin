@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Developer Alamin® | WordPress Developer & Elementor Expert</title>
+  <meta name="description" content="Professional WordPress Developer & Elementor Expert with 400+ websites built. Custom design, speed optimization, security hardening & WooCommerce solutions." />
+  <meta name="author" content="Md. Al Amin" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Developer Alamin® | WordPress Developer & Elementor Expert" />
+  <meta property="og:description" content="A bold, high-performance portfolio featuring 400+ delivered WordPress websites, 5-star Upwork track record, and modern web solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/author-photo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Developer Alamin® | WordPress Developer & Elementor Expert" />
+  <meta name="twitter:description" content="Professional WordPress Developer with 400+ websites built." />
+
+  <!-- Google Fonts Fallback & Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Core Alture Webflow Stylesheet -->
+  <link href="css/alture.css" rel="stylesheet" type="text/css" />
+
+  <!-- Lenis Smooth Scroll CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css" />
+
+  <!-- Custom Enhanced Stylesheet -->
+  <link href="css/custom.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    body {
+      background-color: #f8f7f3;
+      color: #000000;
+      font-family: 'Inter VF', 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .heading-style-h1, .home-header_heading {
+      font-family: 'BDO Grotesk VF', 'Space Grotesk', sans-serif;
+      letter-spacing: -0.03em;
+    }
+    .text-style-label, .navbar_link-texts, .brand_item, .pricing_plan-info {
+      font-family: 'Roboto Mono VF', 'Space Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== BRAND PRELOADER OVERLAY ==================== -->
+  <div class="brand_wrap">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+      <div class="brand_logo-pulse" style="font-size: 2.25rem; font-weight: 800; letter-spacing: -0.05em; color: #000000;">
+        ALAMIN<span style="color: #3b82f6;">®</span>
+      </div>
+      <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #666; letter-spacing: 0.2em; text-transform: uppercase;">
+        Loading Portfolio
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PAGE WRAPPER ==================== -->
+  <div class="page-wrapper">
+
+    <!-- ==================== NAVBAR ==================== -->
+    <div class="navbar_component">
+      <div class="navbar_content" style="display: flex; justify-content: space-between; align-items: center;">
+        
+        <!-- Left: Brand / Logo -->
+        <div class="navbar_brand" style="display: flex; align-items: center; gap: 1rem;">
+          <a href="#" class="navbar_logo-wrap w-inline-block" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-family: 'BDO Grotesk VF', 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.25rem; color: #000000; letter-spacing: -0.04em;">
+              Alamin<span style="color: #3b82f6;">®</span>
+            </span>
+          </a>
+          <div class="navbar_creative hide-mobile-portrait" style="display: flex; align-items: center; gap: 0.5rem; padding-left: 0.75rem; border-left: 1px solid rgba(0,0,0,0.1);">
+            <img src="assets/icons/barcode.svg" loading="lazy" alt="Barcode" class="navbar_barcode" style="width: 40px; opacity: 0.7;" />
+            <div class="navbar_creative-text" style="font-size: 0.75rem; color: #555;">WordPress Specialist</div>
+          </div>
+        </div>
+
+        <!-- Center: Nav Links -->
+        <nav class="navbar_links-menu">
+          <div class="navbar_links" style="display: flex; align-items: center; gap: 1.75rem;">
+            <a href="#about" class="navbar_link w-inline-block" style="text-decoration: none; color: #444; font-size: 0.875rem;">
+              <div class="navbar_link-texts">
+                <span class="navbar_link-text _1">About</span>
+                <span class="navbar_link-text _2">About</span>
+              </div>
+            </a>
+            <a href="#services" class="navbar_link w-inline-block" style="text-decoration: none; color: #444; font-size: 0.875rem;">
+              <div class="navbar_link-texts">
+                <span class="navbar_link-text _1">Services</span>
+                <span class="navbar_link-text _2">Services</span>
+              </div>
+            </a>
+            <a href="#works" class="navbar_works-link w-inline-block" style="text-decoration: none; color: #444; font-size: 0.875rem; display: flex; align-items: center; gap: 0.35rem;">
+              <div class="navbar_link-texts">
+                <span class="navbar_link-text _1">Works</span>
+                <span class="navbar_link-text _2">Works</span>
+              </div>
+              <div class="navbar_works-number-wrap" style="background: rgba(0,0,0,0.06); padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.75rem; color: #000;">
+                <span class="navbar_works-number">04</span>
+              </div>
+            </a>
+            <a href="#testimonials" class="navbar_link w-inline-block" style="text-decoration: none; color: #444; font-size: 0.875rem;">
+              <div class="navbar_link-texts">
+                <span class="navbar_link-text _1">Reviews</span>
+                <span class="navbar_link-text _2">Reviews</span>
+              </div>
+            </a>
+            <a href="#pricing" class="navbar_link w-inline-block" style="text-decoration: none; color: #444; font-size: 0.875rem;">
+              <div class="navbar_link-texts">
+                <span class="navbar_link-text _1">Pricing</span>
+                <span class="navbar_link-text _2">Pricing</span>
+              </div>
+            </a>
+            <a href="#faq" class="navbar_link w-inline-block" style="text-decoration: none; color: #444; font-size: 0.875rem;">
+              <div class="navbar_link-texts">
+                <span class="navbar_link-text _1">FAQ</span>
+                <span class="navbar_link-text _2">FAQ</span>
+              </div>
+            </a>
+          </div>
+        </nav>
+
+        <!-- Right: Status Badge & CTA -->
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <div class="hide-mobile-portrait" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; color: #444; font-family: 'Roboto Mono VF', monospace;">
+            <span class="status_dot"></span>
+            <span>Available for hire</span>
+          </div>
+
+          <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="button-primary w-inline-block" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1.15rem; border-radius: 100px; background: #000; color: #fff; font-size: 0.8125rem; font-weight: 600; text-decoration: none; transition: transform 0.2s ease, background 0.2s ease;">
+            <span>Hire Me</span>
+            <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; " style="width: 10px; height: 10px;" />
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==================== HERO SECTION (ALTURE SMART BANNER) ==================== -->
+    <section class="section_home-header" style="padding-top: 8rem; padding-bottom: 2.5rem;">
+      <div class="padding-global">
+        
+        <!-- Giant Bold Alture Headlines -->
+        <div class="home-header_headings">
+          <h1 class="home-header_heading" style="font-size: clamp(3.5rem, 11vw, 9.5rem); line-height: 0.92; font-weight: 800; text-transform: uppercase; margin: 0;">
+            Developer<span class="home-header_mark" style="color: #3b82f6;">®</span>
+          </h1>
+          <h2 class="home-header_heading" style="font-size: clamp(3.5rem, 11vw, 9.5rem); line-height: 0.92; font-weight: 800; text-transform: uppercase; color: #666; margin: 0;">
+            Alamin
+          </h2>
+        </div>
+
+        <div class="spacer-small" style="height: 1.5rem;"></div>
+
+        <!-- Smart Alture Video Banner Component (as in user screenshots) -->
+        <div class="home-header_component">
+          <div class="home-header_content">
+            
+            <!-- Dynamic Colorful Aurora Video Background -->
+            <div class="home-header_video w-background-video w-background-video-atom">
+              <video id="hero-bg-video" autoplay loop muted playsinline poster="assets/images/hero-poster.jpg">
+                <source src="assets/images/hero-video.mp4" type="video/mp4" />
+                <source src="https://cdn.prod.website-files.com/6840876d4d1ed0e8e2a330b9%2F684095d127c9ea85d4851940_new-12149178_1920_1080_24fps-transcode.mp4" type="video/mp4" />
+              </video>
+              <!-- Center Marquee Scroll Indicator -->
+              <div class="note-marquee_component">
+                <div class="note-marquee_in">
+                  <div class="note-marquee_text">Scroll to reveal —</div>
+                  <div class="note-marquee_text">Scroll to reveal —</div>
+                  <div class="note-marquee_text">Scroll to reveal —</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Top 4 Services / Capabilities -->
+            <div class="home-header_services">
+              <div class="home-header_service">
+                <div class="home-header_service-text">Web design</div>
+                <div class="home-header_service-line"></div>
+              </div>
+              <div class="home-header_service">
+                <div class="home-header_service-text">Branding</div>
+                <div class="home-header_service-line"></div>
+              </div>
+              <div class="home-header_service">
+                <div class="home-header_service-text">Content</div>
+                <div class="home-header_service-line"></div>
+              </div>
+              <div class="home-header_service">
+                <div class="home-header_service-text">Social media</div>
+                <div class="home-header_service-line"></div>
+              </div>
+            </div>
+
+            <!-- Bottom Block: Left Rotating Words, Right Interactive Contact Card -->
+            <div class="home-header_bottom">
+              
+              <!-- Subheading & Vertical Word Flipper -->
+              <div class="home-header_subheading">
+                <div class="home-header_label">We are Developer Alamin<sup class="home-header_mark-2">®</sup></div>
+                <div class="spacer-xsmall" style="height: 0.35rem;"></div>
+                <h3 class="home-header_subhead">Not just a developer, we are</h3>
+                <div class="home-header_words-wrap">
+                  <div class="home-header_words">
+                    <div class="home-header_word">
+                      <div class="home-header_subhead">Strategic.</div>
+                    </div>
+                    <div class="home-header_word _2">
+                      <div class="home-header_subhead">Unforgettable.</div>
+                    </div>
+                    <div class="home-header_word _3">
+                      <div class="home-header_subhead">High-Performing.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Floating Contact Widget (matching User Images 1 & 2) -->
+              <div class="home-header_contact" id="heroContactCard" title="Click or hover to view contact info">
+                <img src="assets/images/author-photo.png" alt="Md. Al Amin" class="home-header_contact-pic" />
+                <div class="home-header_contact-infos">
+                  
+                  <!-- Pulsating Red Notification Dot -->
+                  <div class="home-header_contact-dot-wrap">
+                    <div class="home-header_contact-dot"></div>
+                    <div class="home-header_contact-dot-scale"></div>
+                  </div>
+
+                  <!-- Collapsed Preview (Image 1) -->
+                  <div class="home-header_contact-texts">
+                    <div class="home-header_contact-cta">Contact Alamin</div>
+                    <div class="home-header_contact-text">WordPress Specialist at Alamin®</div>
+                  </div>
+
+                  <!-- Expanded Popup Details (Image 2) -->
+                  <div class="home-header_infos">
+                    <div class="home-header_infos-in">
+                      <div class="home-header_info first">
+                        <div class="home-header_contact-text">Email</div>
+                        <a href="mailto:developeralaminvi@gmail.com" class="home-header_contact-link">developeralaminvi@gmail.com</a>
+                      </div>
+                      <div class="home-header_info">
+                        <div class="home-header_contact-text">Phone / WhatsApp</div>
+                        <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="home-header_contact-link">+88 01676-086772</a>
+                      </div>
+                      <div class="home-header_info">
+                        <div class="home-header_contact-text">Schedule a call</div>
+                        <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="home-header_contact-link">WhatsApp / Calendly</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Marquee Ticker of Core Skills -->
+      <div class="spacer-medium" style="height: 2.5rem;"></div>
+      <div class="note-marquee_component" style="border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1rem 0; background: rgba(255,255,255,0.015);">
+        <div class="note-marquee_in">
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ WORDPRESS EXPERT
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ ELEMENTOR PRO SPECIALIST
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ WOOCOMMERCE ARCHITECTURE
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ CORE WEB VITALS 90+
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ MALWARE CLEANUP & SECURITY
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ DYNAMIC ACF & CUSTOM POST TYPES
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ 400+ GLOBAL PROJECTS
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ UPWORK 5-STAR RATED
+          </span>
+        </div>
+        <div class="note-marquee_in">
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ WORDPRESS EXPERT
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ ELEMENTOR PRO SPECIALIST
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ WOOCOMMERCE ARCHITECTURE
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ CORE WEB VITALS 90+
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ MALWARE CLEANUP & SECURITY
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ DYNAMIC ACF & CUSTOM POST TYPES
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ 400+ GLOBAL PROJECTS
+          </span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.875rem; letter-spacing: 0.1em; color: #888; text-transform: uppercase; margin-right: 2.5rem;">
+            ✦ UPWORK 5-STAR RATED
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BRANDS / TECH STACK TICKER ==================== -->
+    <section class="section_brands" style="padding: 4rem 0;">
+      <div class="padding-global">
+        <div class="container-medium">
+          <div class="head-grid" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+            <div class="label_wrap" style="display: flex; align-items: center; gap: 0.5rem;">
+              <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #3b82f6;"></div>
+              <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #aaa; margin: 0;">Stack & Platforms</h2>
+            </div>
+            <p style="color: #666; font-size: 0.875rem; margin: 0; max-width: 440px;">
+              Industry-standard tools, modern page builders, and bulletproof code driving top-tier performance.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinite Logo / Stack Dual Row Slider -->
+      <div class="brands_list-wrap">
+        <!-- Row 1 (Forward Scrolling: Left) -->
+        <div class="brands_ticker ticker-forward">
+          <!-- Item 1: WordPress -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/wordpress.svg" alt="WordPress" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">WordPress 6.8</span>
+              <span class="brand_category">CMS Core</span>
+            </div>
+          </div>
+          <!-- Item 2: Elementor Pro -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/elementor.svg" alt="Elementor Pro" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Elementor Pro</span>
+              <span class="brand_category">Visual Builder</span>
+            </div>
+          </div>
+          <!-- Item 3: WooCommerce -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/woocommerce.svg" alt="WooCommerce" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">WooCommerce</span>
+              <span class="brand_category">E-Commerce</span>
+            </div>
+          </div>
+          <!-- Item 4: Google -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/google.svg" alt="Google" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Google Cloud</span>
+              <span class="brand_category">Infrastructure</span>
+            </div>
+          </div>
+          <!-- Item 5: Lighthouse / Speed -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/lighthouse.svg" alt="Google Lighthouse" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Lighthouse 95+</span>
+              <span class="brand_category">Core Web Vitals</span>
+            </div>
+          </div>
+          <!-- Item 6: PHP -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/php.svg" alt="PHP 8.2" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">PHP 8.2</span>
+              <span class="brand_category">Backend Logic</span>
+            </div>
+          </div>
+          <!-- Item 7: MySQL -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/mysql.svg" alt="MySQL" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">MySQL DB</span>
+              <span class="brand_category">Database Query</span>
+            </div>
+          </div>
+          <!-- Item 8: JavaScript -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/javascript.svg" alt="JavaScript" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">JavaScript ES6+</span>
+              <span class="brand_category">Frontend Dynamic</span>
+            </div>
+          </div>
+          <!-- Item 9: ACF Pro -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/acf.svg" alt="ACF Pro" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">ACF Pro</span>
+              <span class="brand_category">Custom Fields</span>
+            </div>
+          </div>
+
+          <!-- Duplicate Row 1 for continuous 100% loop -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/wordpress.svg" alt="WordPress" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">WordPress 6.8</span>
+              <span class="brand_category">CMS Core</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/elementor.svg" alt="Elementor Pro" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Elementor Pro</span>
+              <span class="brand_category">Visual Builder</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/woocommerce.svg" alt="WooCommerce" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">WooCommerce</span>
+              <span class="brand_category">E-Commerce</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/google.svg" alt="Google" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Google Cloud</span>
+              <span class="brand_category">Infrastructure</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/lighthouse.svg" alt="Google Lighthouse" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Lighthouse 95+</span>
+              <span class="brand_category">Core Web Vitals</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/php.svg" alt="PHP 8.2" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">PHP 8.2</span>
+              <span class="brand_category">Backend Logic</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/mysql.svg" alt="MySQL" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">MySQL DB</span>
+              <span class="brand_category">Database Query</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/javascript.svg" alt="JavaScript" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">JavaScript ES6+</span>
+              <span class="brand_category">Frontend Dynamic</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/acf.svg" alt="ACF Pro" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">ACF Pro</span>
+              <span class="brand_category">Custom Fields</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 (Reverse Scrolling: Right) -->
+        <div class="brands_ticker ticker-reverse">
+          <!-- Item 1: Cloudflare -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/cloudflare.svg" alt="Cloudflare" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Cloudflare</span>
+              <span class="brand_category">CDN & Security</span>
+            </div>
+          </div>
+          <!-- Item 2: Upwork -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/upwork.svg" alt="Upwork" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Upwork Top Rated</span>
+              <span class="brand_category">100% Job Success</span>
+            </div>
+          </div>
+          <!-- Item 3: Figma -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/figma.svg" alt="Figma" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Figma to WP</span>
+              <span class="brand_category">Pixel Perfect</span>
+            </div>
+          </div>
+          <!-- Item 4: Google Search Console -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/google-search-console.svg" alt="Search Console" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Search Console</span>
+              <span class="brand_category">SEO & Indexing</span>
+            </div>
+          </div>
+          <!-- Item 5: WP Rocket -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/wprocket.svg" alt="WP Rocket" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">WP Rocket</span>
+              <span class="brand_category">Speed Caching</span>
+            </div>
+          </div>
+          <!-- Item 6: Google Analytics -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/google-analytics.svg" alt="Google Analytics" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Google Analytics 4</span>
+              <span class="brand_category">Traffic & Data</span>
+            </div>
+          </div>
+          <!-- Item 7: Divi -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/divi.svg" alt="Divi Builder" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Divi Builder</span>
+              <span class="brand_category">Visual Design</span>
+            </div>
+          </div>
+          <!-- Item 8: Stripe -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/stripe.svg" alt="Stripe" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Stripe Payments</span>
+              <span class="brand_category">Payment Gateway</span>
+            </div>
+          </div>
+          <!-- Item 9: GitHub -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/github.svg" alt="GitHub" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">GitHub / Git</span>
+              <span class="brand_category">Version Control</span>
+            </div>
+          </div>
+
+          <!-- Duplicate Row 2 for continuous 100% loop -->
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/cloudflare.svg" alt="Cloudflare" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Cloudflare</span>
+              <span class="brand_category">CDN & Security</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/upwork.svg" alt="Upwork" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Upwork Top Rated</span>
+              <span class="brand_category">100% Job Success</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/figma.svg" alt="Figma" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Figma to WP</span>
+              <span class="brand_category">Pixel Perfect</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/google-search-console.svg" alt="Search Console" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Search Console</span>
+              <span class="brand_category">SEO & Indexing</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/wprocket.svg" alt="WP Rocket" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">WP Rocket</span>
+              <span class="brand_category">Speed Caching</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/google-analytics.svg" alt="Google Analytics" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Google Analytics 4</span>
+              <span class="brand_category">Traffic & Data</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/divi.svg" alt="Divi Builder" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Divi Builder</span>
+              <span class="brand_category">Visual Design</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/stripe.svg" alt="Stripe" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">Stripe Payments</span>
+              <span class="brand_category">Payment Gateway</span>
+            </div>
+          </div>
+          <div class="brand_item">
+            <div class="brand_icon-box">
+              <img src="assets/icons/brands/github.svg" alt="GitHub" class="brand_icon" />
+            </div>
+            <div class="brand_text-wrap">
+              <span class="brand_name">GitHub / Git</span>
+              <span class="brand_category">Version Control</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED WORKS SECTION ==================== -->
+    <section id="works" class="section_work-list">
+      
+      <!-- Interactive Floating Mouse Cursor Follower (Alture style) -->
+      <div class="hover_wrap" id="workHoverWrap" aria-hidden="true">
+        <div class="hover_pill">
+          <div class="hover_text" id="workHoverText">View work</div>
+        </div>
+      </div>
+
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <!-- Head Section (Matching User Image 1) -->
+          <div class="work-list_head">
+            <div class="work-list_heading-wrap">
+              <h2 class="work-list_heading-main">
+                Selected<br/>Work.
+              </h2>
+              <div class="work-list_number">
+                <div>3</div>
+              </div>
+            </div>
+
+            <div class="work-list_head-texts">
+              <h3 class="work-list_label">Projects</h3>
+              <p class="work-list_desc">
+                Bespoke WordPress architectures, high-converting WooCommerce stores, and enterprise Elementor solutions engineered with precision for global brands.
+              </p>
+            </div>
+
+            <div class="work-list_year">
+              ©25
+            </div>
+          </div>
+
+          <!-- Project Cards Showcase List (One by one scroll reveal as in User Images 1-4) -->
+          <div class="work-list_wrapper-v1">
+            <div class="work-list_list">
+              
+              <!-- Project 1: Bronx (User Images 1 & 2) -->
+              <div class="work-list_item">
+                <div class="work-list_block">
+                  <a href="https://devalamin.me/plugins/order-confirmation-call" target="_blank" rel="noopener" class="work-list_link" data-title="View Bronx" aria-label="View Bronx project">
+                    <img src="assets/images/project-bronx.webp" alt="Bronx - Developer Alamin" class="work-list_img" loading="eager" />
+                    <div class="work-list_name">
+                      <div class="work-list_dot"></div>
+                      <h3 class="work-list_title">Bronx</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 2: Nexora (User Images 3 & 4) -->
+              <div class="work-list_item">
+                <div class="work-list_block">
+                  <a href="https://devalamin.me/services/elementor-expert" target="_blank" rel="noopener" class="work-list_link" data-title="View Nexora" aria-label="View Nexora project">
+                    <img src="assets/images/project-nexora.webp" alt="Nexora - Developer Alamin" class="work-list_img" loading="eager" />
+                    <div class="work-list_name">
+                      <div class="work-list_dot"></div>
+                      <h3 class="work-list_title">Nexora</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project 3: Carlo (Alture Showcase 3) -->
+              <div class="work-list_item">
+                <div class="work-list_block">
+                  <a href="https://devalamin.me/services/landing-page-design" target="_blank" rel="noopener" class="work-list_link" data-title="View Carlo" aria-label="View Carlo project">
+                    <img src="assets/images/project-carlo.webp" alt="Carlo - Developer Alamin" class="work-list_img" loading="eager" />
+                    <div class="work-list_name">
+                      <div class="work-list_dot"></div>
+                      <h3 class="work-list_title">Carlo</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHY WORK WITH US SECTION ==================== -->
+    <section class="section_home-grid">
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <!-- Header (Matching User Images 1 & 2) -->
+          <div class="home-grid_head">
+            <div class="label_wrap" style="display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
+              <div class="label_dot" style="width: 7px; height: 7px; border-radius: 50%; background: #f3350c;"></div>
+              <h2 class="text-style-label" style="letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.8125rem; font-family: 'Roboto Mono VF', monospace; color: #555; margin: 0;">
+                Why work with us
+              </h2>
+            </div>
+            <h3 class="home-grid_heading-title">
+              We help ambitious brands make their mark—with clarity and precision.
+            </h3>
+          </div>
+
+          <!-- Bento Grid Layout (Matching User Images 1 & 2) -->
+          <div class="home-grid_component">
+            
+            <!-- Card 1: A Strong Team of Experts (Left Column: Concentric Rotating Orbits) -->
+            <div class="home-grid_team">
+              <h4 class="home-grid_team-heading">A strong team of experts</h4>
+              
+              <!-- Outer Orbit Ring (4 avatars rotating) -->
+              <div class="home-grid_circle-1">
+                <img src="assets/images/team-man-1.webp" loading="lazy" alt="Expert Member" class="home-grid_member _1"/>
+                <img src="assets/images/team-woman-2.webp" loading="lazy" alt="Expert Member" class="home-grid_member _2"/>
+                <img src="assets/images/team-man-3.webp" loading="lazy" alt="Expert Member" class="home-grid_member _3"/>
+                <img src="assets/images/team-woman-1.webp" loading="lazy" alt="Expert Member" class="home-grid_member _4"/>
+              </div>
+              
+              <!-- Inner Orbit Ring (3 avatars rotating) -->
+              <div class="home-grid_circle-2">
+                <img src="assets/images/team-woman-3.webp" loading="lazy" alt="Expert Member" class="home-grid_member-in _1"/>
+                <img src="assets/images/team-man-2.webp" loading="lazy" alt="Expert Member" class="home-grid_member-in _2"/>
+                <img src="assets/images/team-woman-4.webp" loading="lazy" alt="Expert Member" class="home-grid_member-in _3"/>
+              </div>
+            </div>
+
+            <!-- Card 2: Real-time Collaboration Live Chat (Top Right Column) -->
+            <div class="home-grid_chat" id="chatCard">
+              <div class="home-grid_label">
+                <span class="chat_status-dot"></span>
+                <span>Real-time collaboration</span>
+              </div>
+              <div class="home-grid_chat-in">
+                
+                <!-- Client Message Group (Left - Asking for Help) -->
+                <div class="home-grid_chat-group _1">
+                  <img src="assets/images/chat-client.webp" loading="lazy" alt="Client" class="chat_pic _1"/>
+                  <div class="home-grid_chats _1">
+                    <div class="chat_message _1" data-chat-bubble="1">
+                      <div class="home-grid_message">
+                        <p class="home-grid_message-text">Hey Alamin! Need urgent help with my site.</p>
+                      </div>
+                    </div>
+                    <div class="chat_message _2" data-chat-bubble="2">
+                      <div class="home-grid_message">
+                        <p class="home-grid_message-text">Checkout is broken &amp; mobile speed is slow 😭</p>
+                      </div>
+                    </div>
+                    <div class="chat_message _3" data-chat-bubble="3">
+                      <div class="home-grid_message">
+                        <p class="home-grid_message-text">Can you help me fix this today?</p>
+                      </div>
+                    </div>
+                    <div class="chat_typing _client" id="clientTyping" aria-label="Client is typing">
+                      <span class="typing_dot"></span>
+                      <span class="typing_dot"></span>
+                      <span class="typing_dot"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Solo Developer Response Group (Right - Alamin Helping Personally) -->
+                <div class="home-grid_chat-group _2">
+                  <div class="home-grid_chats _2">
+                    <div class="chat_message _4" data-chat-bubble="4">
+                      <div class="home-grid_message">
+                        <p class="home-grid_message-text">Hey Philip! Don’t worry at all.</p>
+                      </div>
+                    </div>
+                    <div class="chat_message _5" data-chat-bubble="5">
+                      <div class="home-grid_message">
+                        <p class="home-grid_message-text">I'm on it right now. Fixing it personally for you! ⚡</p>
+                      </div>
+                    </div>
+                    <div class="chat_typing _author" id="authorTyping" aria-label="Alamin is typing">
+                      <span class="typing_dot"></span>
+                      <span class="typing_dot"></span>
+                      <span class="typing_dot"></span>
+                    </div>
+                  </div>
+                  <img src="assets/images/author-photo.png" loading="lazy" alt="Md. Al Amin" class="chat_pic _2"/>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card 3: Transparent Pricing Model with 3D Video & Glass Sculpture (Bottom Right Column) -->
+            <div class="home-grid_pricing">
+              <!-- Looping 3D Abstract Artwork Video ("video shoho") -->
+              <div class="home-grid_pricing-video-wrap">
+                <video autoplay loop muted playsinline poster="assets/images/glass-sculpture.webp" class="home-grid_pricing-video">
+                  <source src="assets/images/abstract-artwork.mp4" type="video/mp4" />
+                </video>
+              </div>
+              
+              <!-- 3D Iridescent Chrome/Glass Sculpture (Image 2) -->
+              <img src="assets/images/glass-sculpture.webp" loading="eager" alt="Transparent pricing model" class="home-grid_pricing-img"/>
+              
+              <h4 class="home-grid_pricing-title">Transparent<br/>pricing model</h4>
+              
+              <a href="#pricing" class="home-grid_pricing-btn">
+                <span>View pricing</span>
+                <span class="pricing-btn_dot"></span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT US SECTION ==================== -->
+    <section id="about" class="section_home-about" style="padding: 6rem 0;">
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3.5rem; align-items: center;">
+            
+            <!-- Left: Profile Artwork & Image -->
+            <div style="position: relative;">
+              <div style="border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
+                <img src="assets/images/author-photo.png" alt="Md. Al Amin" style="width: 100%; height: auto; display: block;" />
+              </div>
+              <!-- Floating Glass Badge -->
+              <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background: rgba(248,247,243,0.92); backdrop-filter: blur(12px); border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                  <div style="font-size: 0.75rem; color: #888; font-family: 'Roboto Mono VF', monospace; text-transform: uppercase;">Status</div>
+                  <div style="font-size: 0.9375rem; font-weight: 600; color: #000; display: flex; align-items: center; gap: 0.4rem;">
+                    <span class="status_dot"></span> Available Worldwide
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 0.75rem; color: #888; font-family: 'Roboto Mono VF', monospace;">Location</div>
+                  <div style="font-size: 0.9375rem; font-weight: 600; color: #000;">Dhaka, BD</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Bio Content -->
+            <div>
+              <div class="label_wrap" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #3b82f6;"></div>
+                <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #aaa; margin: 0;">About Me</h2>
+              </div>
+              
+              <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.15; margin: 0 0 1.5rem 0;">
+                A WordPress Developer Who <span style="color: #3b82f6;">Actually Understands</span> Your Business Goals
+              </h2>
+
+              <p style="color: #333; font-size: 1.0625rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                I'm <strong>Md. Al Amin</strong>, a professional WordPress developer from Bangladesh with years of hands-on experience building high-quality websites for clients across the globe. I don't just write code—I create digital solutions that help businesses grow online.
+              </p>
+
+              <p style="color: #888; font-size: 0.9375rem; line-height: 1.6; margin-bottom: 2rem;">
+                Whether you need a bespoke Elementor design, a complex WooCommerce shop with custom verification logic, malware recovery for a hacked site, or speed optimization to achieve green Core Web Vitals scores—I bring technical excellence and transparent communication to every project.
+              </p>
+
+              <!-- Key Capabilities Checklist -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 2rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
+                  <span style="color: #2563eb;">✔</span> Custom theme development
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
+                  <span style="color: #2563eb;">✔</span> Elementor & Divi builder
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
+                  <span style="color: #2563eb;">✔</span> WooCommerce sales funnels
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
+                  <span style="color: #2563eb;">✔</span> Core Web Vitals speed
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
+                  <span style="color: #2563eb;">✔</span> Security & hack removal
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
+                  <span style="color: #2563eb;">✔</span> Clean, scalable code
+                </div>
+              </div>
+
+              <!-- Action Links -->
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="button-primary w-inline-block" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 100px; background: #000; color: #fff; font-weight: 600; text-decoration: none;">
+                  <span>Chat on WhatsApp</span>
+                  <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; " style="width: 10px; height: 10px;" />
+                </a>
+                <a href="mailto:developeralaminvi@gmail.com" style="color: #aaa; text-decoration: none; font-size: 0.875rem; font-family: 'Roboto Mono VF', monospace;">
+                  developeralaminvi@gmail.com
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION (ALTURE ACCORDION STYLE) ==================== -->
+    <section id="services" class="section_home-services" style="padding: 5rem 0; border-top: 1px solid rgba(0,0,0,0.08);">
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <div class="head-grid" style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 2rem; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <div class="label_wrap" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #3b82f6;"></div>
+                <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #aaa; margin: 0;">Capabilities</h2>
+              </div>
+              <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin: 0;">Services</h2>
+            </div>
+            <div style="font-family: 'BDO Grotesk VF', sans-serif; font-size: 2rem; font-weight: 700; color: #666;">
+              (04)
+            </div>
+          </div>
+
+          <!-- Services Accordion Items -->
+          <div class="home-services_items">
+            
+            <!-- Service 1: Custom Elementor & WordPress Web Design -->
+            <div class="home-services_item active">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: baseline; gap: 1.5rem;">
+                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 1.25rem; color: #555;">01</span>
+                  <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; margin: 0; color: #000;">
+                    Elementor Pro & Custom Web Design
+                  </h3>
+                </div>
+                <div class="home-services_toggle-icon" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); color: #000; display: flex; align-items: center; justify-content: center;">
+                  <span style="font-size: 1.25rem; line-height: 1;">+</span>
+                </div>
+              </div>
+              
+              <div class="home-services_desc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+                <div style="border-radius: 12px; overflow: hidden; max-height: 260px;">
+                  <img src="assets/images/project-elementor.png" alt="Elementor Design" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div>
+                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Custom Layouts</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Dynamic ACF</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Pixel-Perfect</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Mobile Responsive</span>
+                  </div>
+                  <p style="color: #aaa; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Custom Elementor website design & redesign from scratch. Clean layout structures, advanced widgets, conversion-focused forms, dynamic templates, and seamless desktop/tablet/mobile consistency.
+                  </p>
+                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <span>Book this service</span>
+                    <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; filter: invert(1);" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 2: WooCommerce Solutions & Funnels -->
+            <div class="home-services_item">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: baseline; gap: 1.5rem;">
+                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 1.25rem; color: #555;">02</span>
+                  <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; margin: 0; color: #000;">
+                    WooCommerce Stores & Sales Funnels
+                  </h3>
+                </div>
+                <div class="home-services_toggle-icon" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); color: #000; display: flex; align-items: center; justify-content: center;">
+                  <span style="font-size: 1.25rem; line-height: 1;">+</span>
+                </div>
+              </div>
+              
+              <div class="home-services_desc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+                <div style="border-radius: 12px; overflow: hidden; max-height: 260px;">
+                  <img src="assets/images/project-woocommerce.png" alt="WooCommerce Setup" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div>
+                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">CartFlows</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Custom Checkout</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Payment Gateways</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">HPOS Optimized</span>
+                  </div>
+                  <p style="color: #aaa; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Turn visitors into repeat buyers with frictionless checkout pages, high-converting product pages, automated order verification to reduce return rates, and high-performance WooCommerce architecture.
+                  </p>
+                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <span>Book this service</span>
+                    <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; filter: invert(1);" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 3: Speed Optimization (Core Web Vitals) -->
+            <div class="home-services_item">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: baseline; gap: 1.5rem;">
+                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 1.25rem; color: #555;">03</span>
+                  <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; margin: 0; color: #000;">
+                    Speed Optimization & Core Web Vitals
+                  </h3>
+                </div>
+                <div class="home-services_toggle-icon" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); color: #000; display: flex; align-items: center; justify-content: center;">
+                  <span style="font-size: 1.25rem; line-height: 1;">+</span>
+                </div>
+              </div>
+              
+              <div class="home-services_desc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+                <div style="border-radius: 12px; overflow: hidden; max-height: 260px;">
+                  <img src="assets/images/project-speed.png" alt="Speed Optimization" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div>
+                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">LCP & CLS Under 2s</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">TTFB Reduction</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Asset Minification</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Database Optimization</span>
+                  </div>
+                  <p style="color: #aaa; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Achieve 90+ scores on Google PageSpeed Insights for both mobile and desktop. Real performance improvements that slash bounce rates and boost your organic search rankings.
+                  </p>
+                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <span>Book this service</span>
+                    <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; filter: invert(1);" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 4: Bug Fixing & Security Hardening -->
+            <div class="home-services_item">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: baseline; gap: 1.5rem;">
+                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 1.25rem; color: #555;">04</span>
+                  <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; margin: 0; color: #000;">
+                    Bug Fixing, Error Resolution & Security
+                  </h3>
+                </div>
+                <div class="home-services_toggle-icon" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); color: #000; display: flex; align-items: center; justify-content: center;">
+                  <span style="font-size: 1.25rem; line-height: 1;">+</span>
+                </div>
+              </div>
+              
+              <div class="home-services_desc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+                <div style="border-radius: 12px; overflow: hidden; max-height: 260px;">
+                  <img src="assets/images/project-bugfix.png" alt="Bug Fixing and Security" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div>
+                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">White Screen of Death</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">500 Internal Server</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Malware Cleanup</span>
+                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Firewall Protection</span>
+                  </div>
+                  <p style="color: #aaa; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Rapid emergency troubleshooting. We fix critical PHP fatal errors, database connection failures, SSL redirect loops, clean hacked files, and implement ironclad firewall policies.
+                  </p>
+                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <span>Book this service</span>
+                    <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; filter: invert(1);" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SHOWREEL / VIDEO SECTION ==================== -->
+    <section class="section_showreel" style="padding: 6rem 0; background: #f1efea; border-top: 1px solid rgba(0,0,0,0.08); border-bottom: 1px solid rgba(0,0,0,0.08);">
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <div style="position: relative; border-radius: 24px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #000; box-shadow: 0 30px 60px rgba(0,0,0,0.8);">
+            
+            <img src="assets/images/showreel-bg.png" alt="Video Showcase" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; opacity: 0.75; display: block;" />
+
+            <!-- Center Play Trigger Overlay -->
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.25rem;">
+              <a href="#" class="showreel_lightbox open-showreel" style="width: 80px; height: 80px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: transform 0.3s ease;">
+                <img src="assets/icons/play-icon.svg" alt="Play" style="width: 24px; height: 24px; margin-left: 3px;" />
+              </a>
+              <div style="text-align: center;">
+                <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; letter-spacing: 0.2em; color: #aaa; text-transform: uppercase;">
+                  Explore Our Process
+                </div>
+                <h2 style="font-size: 1.75rem; font-weight: 700; margin: 0.25rem 0 0 0; color: #fff;">
+                  Watch Studio Showreel ©2025
+                </h2>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section id="testimonials" class="section_testimonials" style="padding: 6rem 0;">
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <div class="head-grid" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
+            <div>
+              <div class="label_wrap" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #10b981;"></div>
+                <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #aaa; margin: 0;">Upwork Verified Reviews</h2>
+              </div>
+              <h2 style="font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 800; margin: 0;">
+                What our clients are saying
+              </h2>
+            </div>
+            <div style="display: flex; gap: 2rem; align-items: center;">
+              <div>
+                <div style="font-size: 1.75rem; font-weight: 800; color: #10b981;">100%</div>
+                <div style="font-size: 0.75rem; color: #888; font-family: 'Roboto Mono VF', monospace;">Job Success</div>
+              </div>
+              <div>
+                <div style="font-size: 1.75rem; font-weight: 800; color: #3b82f6;">5.0 ★</div>
+                <div style="font-size: 0.75rem; color: #888; font-family: 'Roboto Mono VF', monospace;">Top Rated</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Cards Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+            
+            <!-- Review 1 -->
+            <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px rgba(0,0,0,0.03);">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+                  <div style="display: flex; gap: 2px; color: #f59e0b;">★★★★★</div>
+                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #888;">Upwork Client</span>
+                </div>
+                <p style="color: #222; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                  "Outstanding work - Alamin made me a beautiful website and was very available and collaborative on all the details to get it exactly how I wanted it. Communication in English was excellent."
+                </p>
+              </div>
+              <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                  <div style="font-weight: 600; font-size: 0.9375rem; color: #000;">Coaching Brand Founder</div>
+                  <div style="font-size: 0.75rem; color: #777;">Website Redesign & Branding</div>
+                </div>
+                <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.8125rem; color: #3b82f6;">$240.00</div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px rgba(0,0,0,0.03);">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+                  <div style="display: flex; gap: 2px; color: #f59e0b;">★★★★★</div>
+                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #888;">Upwork Client</span>
+                </div>
+                <p style="color: #222; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                  "Outstanding work! Md Alamin delivered 100% of the landing page improvements exactly as requested, on time and within budget. His attention to detail, quick communication, and technical skills were excellent."
+                </p>
+              </div>
+              <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                  <div style="font-weight: 600; font-size: 0.9375rem; color: #000;">SaaS Product Team</div>
+                  <div style="font-size: 0.75rem; color: #777;">Landing Page Optimization</div>
+                </div>
+                <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.8125rem; color: #3b82f6;">Verified</div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px rgba(0,0,0,0.03);">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+                  <div style="display: flex; gap: 2px; color: #f59e0b;">★★★★★</div>
+                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #888;">Upwork Client</span>
+                </div>
+                <p style="color: #222; font-size: 1rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                  "I've worked with MD Alamin before on Upwork, and this was my second time collaborating with him. Once again, he did an excellent job. He successfully recovered a hacked WordPress site."
+                </p>
+              </div>
+              <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                  <div style="font-weight: 600; font-size: 0.9375rem; color: #000;">Repeat Client</div>
+                  <div style="font-size: 0.75rem; color: #777;">Hacked Site Recovery & Security</div>
+                </div>
+                <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.8125rem; color: #3b82f6;">Repeat Job</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PRICING SECTION ==================== -->
+    <section id="pricing" class="section_pricing" style="padding: 6rem 0; border-top: 1px solid rgba(0,0,0,0.08); background: #f1efea;">
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <div class="head-grid" style="text-align: center; max-width: 640px; margin: 0 auto 3.5rem auto;">
+            <div class="label_wrap" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e;"></div>
+              <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #22c55e; margin: 0;">2 slots available this month</h2>
+            </div>
+            <h2 style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 800; margin: 0.5rem 0 1rem 0;">Transparent Pricing</h2>
+            <p style="color: #888; font-size: 1rem; margin: 0;">
+              No hidden fees, no unnecessary retainer traps. Predictable fixed rates for high-impact results.
+            </p>
+          </div>
+
+          <!-- Pricing Columns -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+            
+            <!-- Standard Plan -->
+            <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 20px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+              <div>
+                <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.8125rem; color: #aaa; text-transform: uppercase; margin-bottom: 0.5rem;">Starter / Redesign</div>
+                <h3 style="font-size: 2rem; font-weight: 700; margin: 0; color: #000;">Standard</h3>
+                <div style="margin: 1.5rem 0 2rem 0;">
+                  <span style="font-size: 3rem; font-weight: 800; color: #000; font-family: 'BDO Grotesk VF', sans-serif;">$450</span>
+                  <span style="color: #777; font-size: 0.875rem; font-family: 'Roboto Mono VF', monospace;">/ project</span>
+                </div>
+                
+                <ul style="list-style: none; padding: 0; margin: 0 0 2rem 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> Single page or high-converting landing page
+                  </li>
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> Elementor Pro or Gutenberg setup
+                  </li>
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> Fully responsive desktop & mobile
+                  </li>
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> 90+ Core Web Vitals speed tuning
+                  </li>
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> 3-5 Business days turnaround
+                  </li>
+                </ul>
+              </div>
+
+              <a href="https://wa.me/8801676086772?text=Hello%20Alamin,%20I%20am%20interested%20in%20the%20Standard%20Package" target="_blank" rel="noopener" style="display: block; text-align: center; padding: 0.85rem; border-radius: 100px; background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.15); color: #000; text-decoration: none; font-weight: 600; font-size: 0.875rem; transition: background 0.2s ease;">
+                Choose Standard
+              </a>
+            </div>
+
+            <!-- Pro Plan (Featured) -->
+            <div style="background: #ffffff; border: 2px solid #2563eb; border-radius: 20px; padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between; position: relative; box-shadow: 0 15px 40px rgba(37,99,235,0.12);">
+              <div style="position: absolute; top: -12px; right: 2rem; background: #3b82f6; color: #fff; font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.25rem 0.75rem; border-radius: 100px;">
+                Most Popular
+              </div>
+              <div>
+                <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.8125rem; color: #60a5fa; text-transform: uppercase; margin-bottom: 0.5rem;">Full-Scale Growth</div>
+                <h3 style="font-size: 2rem; font-weight: 700; margin: 0; color: #000;">Pro E-Commerce / Custom</h3>
+                <div style="margin: 1.5rem 0 2rem 0;">
+                  <span style="font-size: 3rem; font-weight: 800; color: #000; font-family: 'BDO Grotesk VF', sans-serif;">$1,250</span>
+                  <span style="color: #777; font-size: 0.875rem; font-family: 'Roboto Mono VF', monospace;">/ project</span>
+                </div>
+                
+                <ul style="list-style: none; padding: 0; margin: 0 0 2rem 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> Full multi-page website or WooCommerce store
+                  </li>
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> Custom post types, ACF fields & filtering
+                  </li>
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> CartFlows, payment gateways & checkout optimization
+                  </li>
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> Ironclad security, firewall & malware shield
+                  </li>
+                  <li style="color: #333; font-size: 0.9375rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #3b82f6;">✔</span> 30-Day dedicated post-launch support
+                  </li>
+                </ul>
+              </div>
+
+              <a href="https://wa.me/8801676086772?text=Hello%20Alamin,%20I%20am%20interested%20in%20the%20Pro%20Package" target="_blank" rel="noopener" style="display: block; text-align: center; padding: 0.85rem; border-radius: 100px; background: #000; color: #fff; text-decoration: none; font-weight: 600; font-size: 0.875rem; transition: transform 0.2s ease;">
+                Choose Pro
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section id="faq" class="section_faq" style="padding: 6rem 0;">
+      <div class="padding-global">
+        <div class="container-medium" style="max-width: 800px; margin: 0 auto;">
+          
+          <div class="head-grid" style="text-align: center; margin-bottom: 3.5rem;">
+            <div class="label_wrap" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #3b82f6;"></div>
+              <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #aaa; margin: 0;">FAQ</h2>
+            </div>
+            <h2 style="font-size: clamp(2.25rem, 4.5vw, 3.25rem); font-weight: 800; margin: 0.5rem 0;">Answered Questions</h2>
+            <p style="color: #888; font-size: 1rem; margin: 0;">Everything you might want to know—straightforward and transparent.</p>
+          </div>
+
+          <!-- FAQ Accordion List -->
+          <div class="faq_list">
+            
+            <div class="faq_accordion active">
+              <div class="faq_question-wrap">
+                <div style="font-size: 1.125rem; font-weight: 600; color: #000;">
+                  What is your typical turnaround time for a project?
+                </div>
+                <div class="faq_button" style="color: #000; font-size: 1.5rem; line-height: 1;">+</div>
+              </div>
+              <div class="faq_answer-wrap">
+                <p style="color: #aaa; font-size: 0.9375rem; line-height: 1.6; margin: 0;">
+                  For single landing pages or redesigns, turnaround is typically 3–5 business days. For full multi-page corporate sites or complex WooCommerce setups, projects usually take 1–2 weeks, with daily progress updates.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq_accordion">
+              <div class="faq_question-wrap">
+                <div style="font-size: 1.125rem; font-weight: 600; color: #000;">
+                  Do you build custom themes or use page builders like Elementor?
+                </div>
+                <div class="faq_button" style="color: #000; font-size: 1.5rem; line-height: 1;">+</div>
+              </div>
+              <div class="faq_answer-wrap">
+                <p style="color: #aaa; font-size: 0.9375rem; line-height: 1.6; margin: 0;">
+                  Both! I specialize in Elementor Pro for clients who want easy drag-and-drop editing themselves, but I also build completely custom WordPress themes using ACF Pro and Gutenberg blocks for lightweight, ultra-fast performance.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq_accordion">
+              <div class="faq_question-wrap">
+                <div style="font-size: 1.125rem; font-weight: 600; color: #000;">
+                  How do you guarantee a 90+ Google PageSpeed score?
+                </div>
+                <div class="faq_button" style="color: #000; font-size: 1.5rem; line-height: 1;">+</div>
+              </div>
+              <div class="faq_answer-wrap">
+                <p style="color: #aaa; font-size: 0.9375rem; line-height: 1.6; margin: 0;">
+                  I optimize every asset directly: converting images to WebP/AVIF, eliminating render-blocking CSS/JS, minifying code, configuring LiteSpeed / WP Rocket server caching, optimizing database queries, and setting up CDN caching on Cloudflare.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq_accordion">
+              <div class="faq_question-wrap">
+                <div style="font-size: 1.125rem; font-weight: 600; color: #000;">
+                  Can you recover a hacked WordPress site or fix critical 500 errors?
+                </div>
+                <div class="faq_button" style="color: #000; font-size: 1.5rem; line-height: 1;">+</div>
+              </div>
+              <div class="faq_answer-wrap">
+                <p style="color: #aaa; font-size: 0.9375rem; line-height: 1.6; margin: 0;">
+                  Yes. I have rescued hundreds of hacked websites: removing injected malicious scripts/backdoors, fixing white-screen-of-death (WSOD) issues, resolving database connection failures, and putting in place robust firewall rules.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq_accordion">
+              <div class="faq_question-wrap">
+                <div style="font-size: 1.125rem; font-weight: 600; color: #000;">
+                  What do you need from me to get started?
+                </div>
+                <div class="faq_button" style="color: #000; font-size: 1.5rem; line-height: 1;">+</div>
+              </div>
+              <div class="faq_answer-wrap">
+                <p style="color: #aaa; font-size: 0.9375rem; line-height: 1.6; margin: 0;">
+                  Simply reach out with your website link or design concept (Figma, PSD, or reference URLs). If you have hosting/domain access, that's great; if not, I can recommend the best hosting setup tailored to your budget and traffic.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BLOG / INSIGHTS SECTION ==================== -->
+    <section class="section_blog-list" style="padding: 5rem 0; border-top: 1px solid rgba(0,0,0,0.08); background: #f1efea;">
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <div class="head-grid" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3.5rem; flex-wrap: wrap; gap: 1.5rem;">
+            <div>
+              <div class="label_wrap" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #3b82f6;"></div>
+                <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #aaa; margin: 0;">Blog & Insights</h2>
+              </div>
+              <h2 style="font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 800; margin: 0;">Latest Articles</h2>
+            </div>
+            <a href="https://devalamin.me/blog" target="_blank" rel="noopener" style="color: #888; font-size: 0.875rem; text-decoration: none; font-family: 'Roboto Mono VF', monospace;">
+              View all insights →
+            </a>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            
+            <article style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px rgba(0,0,0,0.03);">
+              <div>
+                <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #3b82f6; text-transform: uppercase;">Optimization</span>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin: 0.75rem 0; color: #000; line-height: 1.4;">
+                  How to Achieve 90+ Google PageSpeed on Heavy Elementor Sites
+                </h3>
+                <p style="color: #888; font-size: 0.875rem; line-height: 1.5;">
+                  Practical strategies for eliminating unused CSS, offloading heavy DOM elements, and server-side tuning.
+                </p>
+              </div>
+              <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #555; margin-top: 1rem;">
+                5 min read
+              </div>
+            </article>
+
+            <article style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px rgba(0,0,0,0.03);">
+              <div>
+                <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #10b981; text-transform: uppercase;">WooCommerce</span>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin: 0.75rem 0; color: #000; line-height: 1.4;">
+                  Stopping Fake Cash-on-Delivery Orders with Automated Voice Verification
+                </h3>
+                <p style="color: #888; font-size: 0.875rem; line-height: 1.5;">
+                  How realistic simulated incoming call popups drop return-to-origin rates by up to 40% in e-commerce stores.
+                </p>
+              </div>
+              <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #555; margin-top: 1rem;">
+                4 min read
+              </div>
+            </article>
+
+            <article style="background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px rgba(0,0,0,0.03);">
+              <div>
+                <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #f59e0b; text-transform: uppercase;">Security</span>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin: 0.75rem 0; color: #000; line-height: 1.4;">
+                  Recovering a Compromised WordPress Site: Emergency Checklist
+                </h3>
+                <p style="color: #888; font-size: 0.875rem; line-height: 1.5;">
+                  Step-by-step diagnostic guide for auditing backdoor users, cleaning wp-content injections, and resetting salts.
+                </p>
+              </div>
+              <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; color: #555; margin-top: 1rem;">
+                6 min read
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SIGNATURE CTA SECTION WITH MOUSE-TRAIL EFFECT ==================== -->
+    <section class="section_cta" style="padding: 9rem 0; min-height: 540px; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 50% 50%, #ffffff 0%, #ece8dd 100%);">
+      
+      <!-- GSAP Mouse Trail Visual Container -->
+      <div class="interaction_visual_wrap"></div>
+
+      <!-- Clone Template (Hidden) -->
+      <div class="interaction_img_wrap" style="display: none;">
+        <img src="assets/images/project-wordpress.png" alt="Project Trail Thumbnail" />
+      </div>
+
+      <div class="padding-global" style="position: relative; z-index: 20; text-align: center; max-width: 900px;">
+        
+        <div style="display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.1); padding: 0.4rem 1rem; border-radius: 100px;">
+          <span class="status_dot"></span>
+          <span style="font-family: 'Roboto Mono VF', monospace; font-size: 0.8125rem; color: #222;">Accepting New Projects for 2026</span>
+        </div>
+
+        <h2 style="font-size: clamp(2.75rem, 7vw, 5.5rem); font-weight: 800; line-height: 1.05; margin: 0 0 1.5rem 0; color: #000000;">
+          Start your project with Developer Alamin<span style="color: #3b82f6;">®</span>
+        </h2>
+
+        <p style="color: #444; font-size: 1.25rem; max-width: 600px; margin: 0 auto 2.5rem auto; line-height: 1.5;">
+          Ready to elevate your online presence with speed, security, and high-converting WordPress design? Let's build something exceptional together.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+          <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 1rem 2.25rem; border-radius: 100px; background: #000; color: #fff; font-size: 1rem; font-weight: 700; text-decoration: none; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 10px 30px rgba(255,255,255,0.2);">
+            <span>Let's Talk on WhatsApp</span>
+            <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 12px; height: 12px;" />
+          </a>
+
+          <a href="https://www.upwork.com/freelancers/developeralamin" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 1rem 2rem; border-radius: 100px; background: #ffffff; border: 1px solid rgba(0,0,0,0.15); color: #000; font-size: 1rem; font-weight: 600; text-decoration: none;">
+            <span>Hire on Upwork</span>
+            <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 12px; height: 12px; filter: invert(1);" />
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" style="background: #eeece4; border-top: 1px solid rgba(0,0,0,0.08); padding: 5rem 0 3rem 0;">
+      <div class="padding-global">
+        <div class="container-medium">
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 4rem;">
+            
+            <!-- Col 1: Brand Info -->
+            <div style="grid-column: span 2;">
+              <div style="font-size: 1.5rem; font-weight: 800; color: #000; margin-bottom: 1rem;">
+                Developer Alamin<span style="color: #3b82f6;">®</span>
+              </div>
+              <p style="color: #555; font-size: 0.9375rem; line-height: 1.6; max-width: 360px; margin-bottom: 1.5rem;">
+                Professional WordPress Developer & Elementor Expert. Over 400+ websites delivered worldwide with focus on speed, conversions, and clean architecture.
+              </p>
+              <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.8125rem; color: #555;">
+                Dhaka, Bangladesh • Worldwide Remote
+              </div>
+            </div>
+
+            <!-- Col 2: Navigation -->
+            <div>
+              <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; text-transform: uppercase; color: #888; letter-spacing: 0.1em; margin-bottom: 1.25rem;">
+                Navigation
+              </div>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem;">
+                <li><a href="#about" style="color: #aaa; text-decoration: none; font-size: 0.875rem;">About Studio</a></li>
+                <li><a href="#services" style="color: #aaa; text-decoration: none; font-size: 0.875rem;">Services</a></li>
+                <li><a href="#works" style="color: #aaa; text-decoration: none; font-size: 0.875rem;">Selected Works</a></li>
+                <li><a href="#testimonials" style="color: #aaa; text-decoration: none; font-size: 0.875rem;">Client Reviews</a></li>
+                <li><a href="#pricing" style="color: #aaa; text-decoration: none; font-size: 0.875rem;">Pricing Plans</a></li>
+                <li><a href="#faq" style="color: #aaa; text-decoration: none; font-size: 0.875rem;">FAQs</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 3: Contact & Direct Channels -->
+            <div>
+              <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; text-transform: uppercase; color: #888; letter-spacing: 0.1em; margin-bottom: 1.25rem;">
+                Direct Connect
+              </div>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem;">
+                <li>
+                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #22c55e; text-decoration: none; font-size: 0.875rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <span>WhatsApp: +88 01676-086772</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:developeralaminvi@gmail.com" style="color: #aaa; text-decoration: none; font-size: 0.875rem;">
+                    developeralaminvi@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:support@devalamin.me" style="color: #aaa; text-decoration: none; font-size: 0.875rem;">
+                    support@devalamin.me
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.upwork.com/freelancers/developeralamin" target="_blank" rel="noopener" style="color: #10b981; text-decoration: none; font-size: 0.875rem;">
+                    Upwork Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/md_alaminvi" target="_blank" rel="noopener" style="color: #1dbf73; text-decoration: none; font-size: 0.875rem;">
+                    Fiverr Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/md-alaminvi/" target="_blank" rel="noopener" style="color: #0a66c2; text-decoration: none; font-size: 0.875rem;">
+                    LinkedIn Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/developeralaminvi" target="_blank" rel="noopener" style="color: #fff; text-decoration: none; font-size: 0.875rem;">
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Bottom Copyright Bar -->
+          <div style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <div style="color: #666; font-size: 0.8125rem;">
+              © 2025–2026 Developer Alamin®. All rights reserved. Inspired by Alture design aesthetic.
+            </div>
+            <div style="display: flex; gap: 1.5rem; font-size: 0.8125rem;">
+              <a href="https://devalamin.me" target="_blank" rel="noopener" style="color: #888; text-decoration: none;">devalamin.me</a>
+              <a href="#" style="color: #888; text-decoration: none;">Back to top ↑</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==================== SHOWREEL VIDEO MODAL LIGHTBOX ==================== -->
+  <div class="video-modal_wrap">
+    <div class="video-modal_inner">
+      <button class="video-modal_close" aria-label="Close modal">
+        <img src="assets/icons/close.svg" alt="Close" style="filter: invert(1);" />
+      </button>
+      <iframe 
+        style="width: 100%; height: 100%; border: none;" 
+        src="https://www.youtube-nocookie.com/embed/p1CLeATYZUQ?autoplay=0&rel=0" 
+        title="Studio Showreel" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- ==================== TRUE PROGRESSIVE GLASS BLUR (SEAMLESS OPTICAL MELT) ==================== -->
+  <div class="progressive-blur-wrapper" aria-hidden="true">
+    <div class="progressive-blur-layer layer-1"></div>
+    <div class="progressive-blur-layer layer-2"></div>
+    <div class="progressive-blur-layer layer-3"></div>
+    <div class="progressive-blur-layer layer-4"></div>
+    <div class="progressive-blur-layer layer-5"></div>
+    <div class="progressive-blur-layer layer-6"></div>
+    <div class="progressive-blur-layer layer-7"></div>
+    <div class="progressive-blur-gradient"></div>
+  </div>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <!-- 1. Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+  <!-- 2. GSAP 3 & ScrollTrigger (for Mouse-Trail & Scroll Reveal Animations) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- 3. Template Interactivity Script -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
