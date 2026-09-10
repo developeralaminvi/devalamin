@@ -567,4 +567,102 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // 10. Alture Showreel - Scroll-Driven Video Expansion & YouTube Lightbox Modal
+  const showreelSection = document.getElementById("showreelSection");
+  const showreelCard = document.getElementById("showreelCard");
+  const showreelPlayBtn = document.getElementById("showreelPlayBtn");
+  const showreelModal = document.getElementById("showreelModal");
+  const modalYoutubeIframe = document.getElementById("modalYoutubeIframe");
+  const closeShowreelModal = document.getElementById("closeShowreelModal");
+  const closeShowreelBtn = document.getElementById("closeShowreelBtn");
+
+  if (showreelSection && showreelCard) {
+    function updateShowreel() {
+      const rect = showreelSection.getBoundingClientRect();
+      const sectionHeight = showreelSection.offsetHeight - window.innerHeight;
+
+      if (sectionHeight <= 0) return;
+
+      // Progress from 0 (top of section) to 1 (bottom of section)
+      let progress = -rect.top / sectionHeight;
+      progress = Math.max(0, Math.min(1, progress));
+
+      // Calculate width: starts at 140px, expands to 100% viewport width without scrollbar overflow
+      const startWidth = 140; // px
+      const maxVW = document.documentElement.clientWidth || window.innerWidth;
+      const currentWidth = startWidth + progress * (maxVW - startWidth);
+
+      // Calculate height: starts at 52px, expands to 100vh
+      const startHeight = 52; // px
+      const maxVH = window.innerHeight;
+      const currentHeight = startHeight + progress * (maxVH - startHeight);
+
+      // Calculate border radius: starts at 100px (pill), morphs down to 0px
+      const currentRadius = (1 - progress) * 100;
+
+      // Apply animated styles
+      showreelCard.style.width = `${currentWidth}px`;
+      showreelCard.style.height = `${currentHeight}px`;
+      showreelCard.style.borderRadius = `${currentRadius}px`;
+
+      // Show Play Button when video expands past 35% scroll progress
+      if (progress > 0.35) {
+        showreelCard.classList.add("active-play");
+      } else {
+        showreelCard.classList.remove("active-play");
+      }
+    }
+
+    // Attach scroll listener to window & Lenis instance
+    window.addEventListener("scroll", updateShowreel, { passive: true });
+    if (typeof lenisInstance !== "undefined" && lenisInstance) {
+      lenisInstance.on("scroll", updateShowreel);
+    }
+    updateShowreel();
+
+    // Modal Video Trigger for YouTube qHMjTMW1go4
+    const youtubeVideoUrl = "https://www.youtube.com/embed/qHMjTMW1go4?autoplay=1&rel=0";
+
+    function openModal(e) {
+      if (e) e.preventDefault();
+      if (modalYoutubeIframe) {
+        modalYoutubeIframe.src = youtubeVideoUrl;
+      }
+      if (showreelModal) {
+        showreelModal.classList.add("open");
+      }
+      if (typeof lenisInstance !== "undefined" && lenisInstance) {
+        lenisInstance.stop();
+      }
+    }
+
+    function closeModal() {
+      if (showreelModal) {
+        showreelModal.classList.remove("open");
+      }
+      if (modalYoutubeIframe) {
+        modalYoutubeIframe.src = "";
+      }
+      if (typeof lenisInstance !== "undefined" && lenisInstance) {
+        lenisInstance.start();
+      }
+    }
+
+    if (showreelPlayBtn) {
+      showreelPlayBtn.addEventListener("click", openModal);
+    }
+    if (closeShowreelModal) {
+      closeShowreelModal.addEventListener("click", closeModal);
+    }
+    if (closeShowreelBtn) {
+      closeShowreelBtn.addEventListener("click", closeModal);
+    }
+  }
+
+  // 11. Dynamic Current Year Auto-Updater
+  const currentYear = new Date().getFullYear();
+  document.querySelectorAll(".current-year").forEach((el) => {
+    el.textContent = currentYear;
+  });
 });

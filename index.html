@@ -817,23 +817,37 @@
           <!-- Bento Grid Layout (Matching User Images 1 & 2) -->
           <div class="home-grid_component">
             
-            <!-- Card 1: A Strong Team of Experts (Left Column: Concentric Rotating Orbits) -->
+            <!-- Card 1: Tech Stack Orbit (Replaced 'Team of Experts' with Solo Developer Tech Stack & Ecosystem) -->
             <div class="home-grid_team">
-              <h4 class="home-grid_team-heading">A strong team of experts</h4>
+              <h4 class="home-grid_team-heading">My Core Tech Stack &amp; Tools</h4>
               
-              <!-- Outer Orbit Ring (4 avatars rotating) -->
+              <!-- Outer Orbit Ring (4 Tech Badges rotating) -->
               <div class="home-grid_circle-1">
-                <img src="assets/images/team-man-1.webp" loading="lazy" alt="Expert Member" class="home-grid_member _1"/>
-                <img src="assets/images/team-woman-2.webp" loading="lazy" alt="Expert Member" class="home-grid_member _2"/>
-                <img src="assets/images/team-man-3.webp" loading="lazy" alt="Expert Member" class="home-grid_member _3"/>
-                <img src="assets/images/team-woman-1.webp" loading="lazy" alt="Expert Member" class="home-grid_member _4"/>
+                <div class="home-grid_member _1" title="WordPress 6.8">
+                  <img src="assets/icons/brands/wordpress.svg" loading="lazy" alt="WordPress" />
+                </div>
+                <div class="home-grid_member _2" title="Elementor Pro">
+                  <img src="assets/icons/brands/elementor.svg" loading="lazy" alt="Elementor Pro" />
+                </div>
+                <div class="home-grid_member _3" title="WooCommerce Architecture">
+                  <img src="assets/icons/brands/woocommerce.svg" loading="lazy" alt="WooCommerce" />
+                </div>
+                <div class="home-grid_member _4" title="PHP 8.2 &amp; Backend">
+                  <img src="assets/icons/brands/php.svg" loading="lazy" alt="PHP" />
+                </div>
               </div>
               
-              <!-- Inner Orbit Ring (3 avatars rotating) -->
+              <!-- Inner Orbit Ring (3 Tech Badges rotating) -->
               <div class="home-grid_circle-2">
-                <img src="assets/images/team-woman-3.webp" loading="lazy" alt="Expert Member" class="home-grid_member-in _1"/>
-                <img src="assets/images/team-man-2.webp" loading="lazy" alt="Expert Member" class="home-grid_member-in _2"/>
-                <img src="assets/images/team-woman-4.webp" loading="lazy" alt="Expert Member" class="home-grid_member-in _3"/>
+                <div class="home-grid_member-in _1" title="JavaScript ES6+">
+                  <img src="assets/icons/brands/javascript.svg" loading="lazy" alt="JavaScript" />
+                </div>
+                <div class="home-grid_member-in _2" title="Figma UI/UX Design">
+                  <img src="assets/icons/brands/figma.svg" loading="lazy" alt="Figma" />
+                </div>
+                <div class="home-grid_member-in _3" title="Upwork 5-Star Rated">
+                  <img src="assets/icons/brands/upwork.svg" loading="lazy" alt="Upwork" />
+                </div>
               </div>
             </div>
 
@@ -923,81 +937,69 @@
       </div>
     </section>
 
-    <!-- ==================== ABOUT US SECTION ==================== -->
-    <section id="about" class="section_home-about" style="padding: 6rem 0;">
+    <!-- ==================== ABOUT US SECTION (ALTURE VIDEO & QUOTE STYLE) ==================== -->
+    <section id="about" class="section_home-about" style="background-color: #f8f7f3; color: #000000; padding: 6.5rem 0;">
       <div class="padding-global">
         <div class="container-medium">
           
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3.5rem; align-items: center;">
+          <div class="about_component">
             
-            <!-- Left: Profile Artwork & Image -->
-            <div style="position: relative;">
-              <div style="border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #ffffff; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
-                <img src="assets/images/author-photo.png" alt="Md. Al Amin" style="width: 100%; height: auto; display: block;" />
-              </div>
-              <!-- Floating Glass Badge -->
-              <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background: rgba(248,247,243,0.92); backdrop-filter: blur(12px); border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; padding: 1rem 1.25rem; display: flex; justify-content: space-between; align-items: center;">
-                <div>
-                  <div style="font-size: 0.75rem; color: #888; font-family: 'Roboto Mono VF', monospace; text-transform: uppercase;">Status</div>
-                  <div style="font-size: 0.9375rem; font-weight: 600; color: #000; display: flex; align-items: center; gap: 0.4rem;">
-                    <span class="status_dot"></span> Available Worldwide
-                  </div>
-                </div>
-                <div style="text-align: right;">
-                  <div style="font-size: 0.75rem; color: #888; font-family: 'Roboto Mono VF', monospace;">Location</div>
-                  <div style="font-size: 0.9375rem; font-weight: 600; color: #000;">Dhaka, BD</div>
+            <!-- Left Column: Colorful Mesh Gradient Video Banner with Floating Glass Quote Card -->
+            <div class="about_video-wrap">
+              <video class="about_video-bg" autoplay loop muted playsinline poster="assets/images/hero-poster.jpg">
+                <source src="assets/images/hero-video.mp4" type="video/mp4" />
+                <source src="https://cdn.prod.website-files.com/6840876d4d1ed0e8e2a330b9%2F684095d127c9ea85d4851940_new-12149178_1920_1080_24fps-transcode.mp4" type="video/mp4" />
+              </video>
+              
+              <!-- Dark Radial Overlay for Video Contrast -->
+              <div class="about_video-overlay"></div>
+
+              <!-- Floating Glass Quote Card -->
+              <div class="about_quote-card">
+                <p class="about_quote-text">
+                  “Great work doesn’t happen by accident. It comes from listening closely, challenging ideas, and obsessing over the details — that’s what I do every day.”
+                </p>
+                <div class="about_quote-author">
+                  <div class="about_author-name">Md. Al Amin</div>
+                  <div class="about_author-title">WordPress Specialist &amp; Elementor Expert</div>
                 </div>
               </div>
             </div>
 
-            <!-- Right: Bio Content -->
-            <div>
-              <div class="label_wrap" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-                <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #3b82f6;"></div>
-                <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #aaa; margin: 0;">About Me</h2>
+            <!-- Right Column: Clean Typography & CTA -->
+            <div class="about_content">
+              
+              <!-- Red Dot Category Tag -->
+              <div class="about_label-wrap">
+                <span class="about_label-dot"></span>
+                <span class="about_label-text">ABOUT US</span>
               </div>
               
-              <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.15; margin: 0 0 1.5rem 0;">
-                A WordPress Developer Who <span style="color: #3b82f6;">Actually Understands</span> Your Business Goals
+              <!-- Bold Alture Heading -->
+              <h2 class="about_heading">
+                I’m a hands-on digital specialist building thoughtful solutions for ambitious brands.
               </h2>
 
-              <p style="color: #333; font-size: 1.0625rem; line-height: 1.6; margin-bottom: 1.25rem;">
-                I'm <strong>Md. Al Amin</strong>, a professional WordPress developer from Bangladesh with years of hands-on experience building high-quality websites for clients across the globe. I don't just write code—I create digital solutions that help businesses grow online.
+              <!-- Description Paragraphs -->
+              <p class="about_desc">
+                Professional WordPress Developer &amp; Elementor Expert with 400+ websites delivered globally. I combine conversion-driven UX design, custom PHP/ACF architecture, speed optimization, and security hardening to help businesses thrive online.
               </p>
 
-              <p style="color: #888; font-size: 0.9375rem; line-height: 1.6; margin-bottom: 2rem;">
-                Whether you need a bespoke Elementor design, a complex WooCommerce shop with custom verification logic, malware recovery for a hacked site, or speed optimization to achieve green Core Web Vitals scores—I bring technical excellence and transparent communication to every project.
-              </p>
-
-              <!-- Key Capabilities Checklist -->
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 2rem;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
-                  <span style="color: #2563eb;">✔</span> Custom theme development
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
-                  <span style="color: #2563eb;">✔</span> Elementor & Divi builder
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
-                  <span style="color: #2563eb;">✔</span> WooCommerce sales funnels
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
-                  <span style="color: #2563eb;">✔</span> Core Web Vitals speed
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
-                  <span style="color: #2563eb;">✔</span> Security & hack removal
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #222;">
-                  <span style="color: #2563eb;">✔</span> Clean, scalable code
-                </div>
+              <!-- Capability Badges -->
+              <div class="about_skills-grid">
+                <span class="about_skill-badge">✔ Custom WP Themes</span>
+                <span class="about_skill-badge">✔ Elementor &amp; Divi</span>
+                <span class="about_skill-badge">✔ WooCommerce Funnels</span>
+                <span class="about_skill-badge">✔ 95+ Core Web Vitals</span>
               </div>
 
-              <!-- Action Links -->
-              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-                <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="button-primary w-inline-block" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 100px; background: #000; color: #fff; font-weight: 600; text-decoration: none;">
-                  <span>Chat on WhatsApp</span>
-                  <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; " style="width: 10px; height: 10px;" />
+              <!-- Pill CTA Button (Matching 'More about us •' in screenshot) -->
+              <div class="about_cta-wrap">
+                <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="about_pill-btn">
+                  <span>More about me</span>
+                  <span class="about_btn-dot"></span>
                 </a>
-                <a href="mailto:developeralaminvi@gmail.com" style="color: #aaa; text-decoration: none; font-size: 0.875rem; font-family: 'Roboto Mono VF', monospace;">
+                <a href="mailto:developeralaminvi@gmail.com" class="about_email-link">
                   developeralaminvi@gmail.com
                 </a>
               </div>
@@ -1010,169 +1012,163 @@
       </div>
     </section>
 
-    <!-- ==================== SERVICES SECTION (ALTURE ACCORDION STYLE) ==================== -->
-    <section id="services" class="section_home-services" style="padding: 5rem 0; border-top: 1px solid rgba(0,0,0,0.08);">
+    <!-- ==================== SERVICES SECTION (ALTURE DARK BENTO STICKY STACKING STYLE) ==================== -->
+    <section id="services" class="section_home-services">
       <div class="padding-global">
         <div class="container-medium">
           
-          <div class="head-grid" style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 2rem; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
-            <div>
-              <div class="label_wrap" style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                <div class="label_dot" style="width: 8px; height: 8px; border-radius: 50%; background: #3b82f6;"></div>
-                <h2 class="text-style-label" style="text-transform: uppercase; font-size: 0.8125rem; color: #aaa; margin: 0;">Capabilities</h2>
-              </div>
-              <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin: 0;">Services</h2>
-            </div>
-            <div style="font-family: 'BDO Grotesk VF', sans-serif; font-size: 2rem; font-weight: 700; color: #666;">
-              (04)
-            </div>
-          </div>
-
-          <!-- Services Accordion Items -->
-          <div class="home-services_items">
+          <div class="services_container">
             
-            <!-- Service 1: Custom Elementor & WordPress Web Design -->
-            <div class="home-services_item active">
-              <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 1.25rem; color: #555;">01</span>
-                  <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; margin: 0; color: #000;">
-                    Elementor Pro & Custom Web Design
-                  </h3>
-                </div>
-                <div class="home-services_toggle-icon" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); color: #000; display: flex; align-items: center; justify-content: center;">
-                  <span style="font-size: 1.25rem; line-height: 1;">+</span>
-                </div>
-              </div>
+            <!-- Header Grid (Sticky Header) -->
+            <div class="services_header">
+              <h2 class="services_title">Services</h2>
               
-              <div class="home-services_desc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
-                <div style="border-radius: 12px; overflow: hidden; max-height: 260px;">
-                  <img src="assets/images/project-elementor.png" alt="Elementor Design" style="width: 100%; height: 100%; object-fit: cover;" />
-                </div>
-                <div>
-                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Custom Layouts</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Dynamic ACF</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Pixel-Perfect</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Mobile Responsive</span>
-                  </div>
-                  <p style="color: #aaa; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
-                    Custom Elementor website design & redesign from scratch. Clean layout structures, advanced widgets, conversion-focused forms, dynamic templates, and seamless desktop/tablet/mobile consistency.
-                  </p>
-                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
-                    <span>Book this service</span>
-                    <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; filter: invert(1);" />
-                  </a>
-                </div>
+              <div class="services_crosses">
+                <span>×</span>
+                <span>×</span>
+                <span>×</span>
+                <span>×</span>
               </div>
+
+              <div class="services_count">(04)</div>
             </div>
 
-            <!-- Service 2: WooCommerce Solutions & Funnels -->
-            <div class="home-services_item">
-              <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 1.25rem; color: #555;">02</span>
-                  <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; margin: 0; color: #000;">
-                    WooCommerce Stores & Sales Funnels
-                  </h3>
-                </div>
-                <div class="home-services_toggle-icon" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); color: #000; display: flex; align-items: center; justify-content: center;">
-                  <span style="font-size: 1.25rem; line-height: 1;">+</span>
-                </div>
-              </div>
+            <!-- Service Items List (Sticky Stacking Items) -->
+            <div class="services_list">
               
-              <div class="home-services_desc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
-                <div style="border-radius: 12px; overflow: hidden; max-height: 260px;">
-                  <img src="assets/images/project-woocommerce.png" alt="WooCommerce Setup" style="width: 100%; height: 100%; object-fit: cover;" />
-                </div>
-                <div>
-                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">CartFlows</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Custom Checkout</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Payment Gateways</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">HPOS Optimized</span>
+              <!-- Service 1: Web Design & Elementor Expert -->
+              <div class="services_item _1">
+                <div class="services_item-left">
+                  <div class="services_item-title-wrap">
+                    <span class="services_num-badge">1</span>
+                    <h3 class="services_item-title">WordPress &amp; Elementor Design</h3>
                   </div>
-                  <p style="color: #aaa; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
-                    Turn visitors into repeat buyers with frictionless checkout pages, high-converting product pages, automated order verification to reduce return rates, and high-performance WooCommerce architecture.
-                  </p>
-                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
-                    <span>Book this service</span>
-                    <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; filter: invert(1);" />
-                  </a>
+                  <div class="services_pills">
+                    <span class="services_pill">Website</span>
+                    <span class="services_pill">Wireframe</span>
+                    <span class="services_pill">Landing Page</span>
+                    <span class="services_pill">Dynamic ACF</span>
+                    <span class="services_pill">Pixel Perfect</span>
+                  </div>
+                </div>
+
+                <div class="services_item-right">
+                  <div class="services_img-wrap">
+                    <img src="assets/images/project-elementor.png" alt="WordPress &amp; Elementor Design" class="services_img" />
+                  </div>
+                  <div class="services_desc-wrap">
+                    <p class="services_desc">
+                      Custom Elementor website design &amp; redesign from scratch. Clean layout structures, conversion-driven forms, custom post types, and 100% mobile responsiveness.
+                    </p>
+                    <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="services_cta-link">
+                      <span>Book this service</span>
+                      <img src="assets/icons/arrow-diagonal.svg" alt="" class="services_cta-icon" />
+                    </a>
+                  </div>
                 </div>
               </div>
+
+              <!-- Service 2: WooCommerce & Sales Funnels -->
+              <div class="services_item _2">
+                <div class="services_item-left">
+                  <div class="services_item-title-wrap">
+                    <span class="services_num-badge">2</span>
+                    <h3 class="services_item-title">WooCommerce &amp; Sales Funnels</h3>
+                  </div>
+                  <div class="services_pills">
+                    <span class="services_pill">E-Commerce</span>
+                    <span class="services_pill">CartFlows</span>
+                    <span class="services_pill">Custom Checkout</span>
+                    <span class="services_pill">Payment Gateways</span>
+                  </div>
+                </div>
+
+                <div class="services_item-right">
+                  <div class="services_img-wrap">
+                    <img src="assets/images/project-woocommerce.png" alt="WooCommerce &amp; Sales Funnels" class="services_img" />
+                  </div>
+                  <div class="services_desc-wrap">
+                    <p class="services_desc">
+                      High-converting e-commerce stores with frictionless checkout pages, automated order verification to reduce return rates, and high-performance store architecture.
+                    </p>
+                    <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="services_cta-link">
+                      <span>Book this service</span>
+                      <img src="assets/icons/arrow-diagonal.svg" alt="" class="services_cta-icon" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service 3: Speed Optimization & Core Web Vitals -->
+              <div class="services_item _3">
+                <div class="services_item-left">
+                  <div class="services_item-title-wrap">
+                    <span class="services_num-badge">3</span>
+                    <h3 class="services_item-title">Speed Optimization (Core Web Vitals)</h3>
+                  </div>
+                  <div class="services_pills">
+                    <span class="services_pill">PageSpeed 95+</span>
+                    <span class="services_pill">WP Rocket</span>
+                    <span class="services_pill">LCP &amp; CLS Fix</span>
+                    <span class="services_pill">Database Clean</span>
+                  </div>
+                </div>
+
+                <div class="services_item-right">
+                  <div class="services_img-wrap">
+                    <img src="assets/images/project-speed.png" alt="Speed Optimization" class="services_img" />
+                  </div>
+                  <div class="services_desc-wrap">
+                    <p class="services_desc">
+                      Achieve 90+ green scores on Google PageSpeed Insights &amp; GTmetrix for mobile and desktop. Asset minification, image compression, caching, and server optimization.
+                    </p>
+                    <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="services_cta-link">
+                      <span>Book this service</span>
+                      <img src="assets/icons/arrow-diagonal.svg" alt="" class="services_cta-icon" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service 4: Security Hardening & Bug Fixing -->
+              <div class="services_item _4">
+                <div class="services_item-left">
+                  <div class="services_item-title-wrap">
+                    <span class="services_num-badge">4</span>
+                    <h3 class="services_item-title">Security &amp; Bug Fixes</h3>
+                  </div>
+                  <div class="services_pills">
+                    <span class="services_pill">Malware Cleanup</span>
+                    <span class="services_pill">Hack Removal</span>
+                    <span class="services_pill">Firewall Setup</span>
+                    <span class="services_pill">Error 500/WSOD</span>
+                  </div>
+                </div>
+
+                <div class="services_item-right">
+                  <div class="services_img-wrap">
+                    <img src="assets/images/project-security.png" alt="Security &amp; Bug Fixes" class="services_img" />
+                  </div>
+                  <div class="services_desc-wrap">
+                    <p class="services_desc">
+                      Emergency malware recovery, vulnerability patching, login security hardening, critical PHP error resolution, and bulletproof firewall protection.
+                    </p>
+                    <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="services_cta-link">
+                      <span>Book this service</span>
+                      <img src="assets/icons/arrow-diagonal.svg" alt="" class="services_cta-icon" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
-            <!-- Service 3: Speed Optimization (Core Web Vitals) -->
-            <div class="home-services_item">
-              <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 1.25rem; color: #555;">03</span>
-                  <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; margin: 0; color: #000;">
-                    Speed Optimization & Core Web Vitals
-                  </h3>
-                </div>
-                <div class="home-services_toggle-icon" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); color: #000; display: flex; align-items: center; justify-content: center;">
-                  <span style="font-size: 1.25rem; line-height: 1;">+</span>
-                </div>
-              </div>
-              
-              <div class="home-services_desc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
-                <div style="border-radius: 12px; overflow: hidden; max-height: 260px;">
-                  <img src="assets/images/project-speed.png" alt="Speed Optimization" style="width: 100%; height: 100%; object-fit: cover;" />
-                </div>
-                <div>
-                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">LCP & CLS Under 2s</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">TTFB Reduction</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Asset Minification</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Database Optimization</span>
-                  </div>
-                  <p style="color: #aaa; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
-                    Achieve 90+ scores on Google PageSpeed Insights for both mobile and desktop. Real performance improvements that slash bounce rates and boost your organic search rankings.
-                  </p>
-                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
-                    <span>Book this service</span>
-                    <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; filter: invert(1);" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Service 4: Bug Fixing & Security Hardening -->
-            <div class="home-services_item">
-              <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div style="display: flex; align-items: baseline; gap: 1.5rem;">
-                  <span style="font-family: 'Roboto Mono VF', monospace; font-size: 1.25rem; color: #555;">04</span>
-                  <h3 style="font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; margin: 0; color: #000;">
-                    Bug Fixing, Error Resolution & Security
-                  </h3>
-                </div>
-                <div class="home-services_toggle-icon" style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); color: #000; display: flex; align-items: center; justify-content: center;">
-                  <span style="font-size: 1.25rem; line-height: 1;">+</span>
-                </div>
-              </div>
-              
-              <div class="home-services_desc" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
-                <div style="border-radius: 12px; overflow: hidden; max-height: 260px;">
-                  <img src="assets/images/project-bugfix.png" alt="Bug Fixing and Security" style="width: 100%; height: 100%; object-fit: cover;" />
-                </div>
-                <div>
-                  <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">White Screen of Death</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">500 Internal Server</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Malware Cleanup</span>
-                    <span class="brand_item" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Firewall Protection</span>
-                  </div>
-                  <p style="color: #aaa; font-size: 1rem; line-height: 1.6; margin-bottom: 1rem;">
-                    Rapid emergency troubleshooting. We fix critical PHP fatal errors, database connection failures, SSL redirect loops, clean hacked files, and implement ironclad firewall policies.
-                  </p>
-                  <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" style="color: #3b82f6; font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
-                    <span>Book this service</span>
-                    <img src="assets/icons/arrow-diagonal.svg" alt="" style="width: 10px; height: 10px; filter: invert(1);" />
-                  </a>
-                </div>
-              </div>
+            <!-- Footer Button matching Screenshot 4 ("Get in touch •") -->
+            <div class="services_footer">
+              <a href="https://wa.me/8801676086772" target="_blank" rel="noopener" class="services_get-in-touch-btn">
+                <span>Get in touch</span>
+                <span class="services_btn-dot"></span>
+              </a>
             </div>
 
           </div>
@@ -1181,32 +1177,51 @@
       </div>
     </section>
 
-    <!-- ==================== SHOWREEL / VIDEO SECTION ==================== -->
-    <section class="section_showreel" style="padding: 6rem 0; background: #f1efea; border-top: 1px solid rgba(0,0,0,0.08); border-bottom: 1px solid rgba(0,0,0,0.08);">
-      <div class="padding-global">
-        <div class="container-medium">
-          
-          <div style="position: relative; border-radius: 24px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #000; box-shadow: 0 30px 60px rgba(0,0,0,0.8);">
-            
-            <img src="assets/images/showreel-bg.png" alt="Video Showcase" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; opacity: 0.75; display: block;" />
+    <!-- ==================== SHOWREEL / EXPANDING VIDEO SECTION ==================== -->
+    <section class="section_showreel" id="showreelSection">
+      <div class="showreel_sticky-wrap">
+        
+        <div class="showreel_row">
+          <!-- Left Label (Dynamic Year) -->
+          <span class="showreel_year">©<span class="current-year">2026</span></span>
 
-            <!-- Center Play Trigger Overlay -->
-            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.25rem;">
-              <a href="#" class="showreel_lightbox open-showreel" style="width: 80px; height: 80px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: transform 0.3s ease;">
-                <img src="assets/icons/play-icon.svg" alt="Play" style="width: 24px; height: 24px; margin-left: 3px;" />
-              </a>
-              <div style="text-align: center;">
-                <div style="font-family: 'Roboto Mono VF', monospace; font-size: 0.75rem; letter-spacing: 0.2em; color: #aaa; text-transform: uppercase;">
-                  Explore Our Process
-                </div>
-                <h2 style="font-size: 1.75rem; font-weight: 700; margin: 0.25rem 0 0 0; color: #fff;">
-                  Watch Studio Showreel ©2025
-                </h2>
-              </div>
-            </div>
+          <!-- Expanding Video Card Container -->
+          <div class="showreel_card" id="showreelCard">
+            
+            <!-- Ultra Clean Background Video (Zero YouTube Text / Error Overlays) -->
+            <video class="showreel_video-bg" autoplay loop muted playsinline poster="assets/images/showreel-bg.png">
+              <source src="assets/images/hero-video.mp4" type="video/mp4" />
+            </video>
+
+            <!-- Dark Translucent Overlay -->
+            <div class="showreel_card-overlay"></div>
+
+            <!-- Play Showreel Trigger Button (Matching Screenshots 3, 4, 5) -->
+            <button class="showreel_play-btn" id="showreelPlayBtn" aria-label="Play showreel video">
+              <span>Play showreel</span>
+              <span class="showreel_play-icon-circle">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5,3 19,12 5,21"></polygon>
+                </svg>
+              </span>
+            </button>
 
           </div>
 
+          <!-- Right Label (Showreel) -->
+          <span class="showreel_label">Showreel</span>
+        </div>
+
+      </div>
+
+      <!-- Lightbox Modal for Playing YouTube Video with Sound -->
+      <div class="showreel_modal" id="showreelModal">
+        <div class="showreel_modal-overlay" id="closeShowreelModal"></div>
+        <div class="showreel_modal-content">
+          <button class="showreel_modal-close" id="closeShowreelBtn" aria-label="Close video modal">&times;</button>
+          <div class="showreel_modal-iframe-wrap">
+            <iframe id="modalYoutubeIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -1714,7 +1729,7 @@
       </button>
       <iframe 
         style="width: 100%; height: 100%; border: none;" 
-        src="https://www.youtube-nocookie.com/embed/p1CLeATYZUQ?autoplay=0&rel=0" 
+        src="https://www.youtube-nocookie.com/embed/qHMjTMW1go4?autoplay=0&rel=0" 
         title="Studio Showreel" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
